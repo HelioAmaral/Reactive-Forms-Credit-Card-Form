@@ -1,0 +1,5 @@
+<!--add the form element with the formGroup binding, to say angular this formGroup is comming from the cardForm we created in the card-form.ts-->
+<form [formGroup]="cardForm">
+    <!--by adding formControlName="name" to the input element angular will try to connect this input with the name: new FormControl from .ts, every configuration we make in the .ts for name will be reflected here-->
+    <input formControlName="name" />
+</form>
